@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url();
+    background-image: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -54,7 +54,7 @@ select {
 
 .todo-container {
     max-width: 450px;
-    margin: 3rem auto 0;
+    margin: 3rem auto ;
     background-color: #fdfdfd;
     padding: 1.5rem;
     border-radius: 15px;
@@ -70,8 +70,15 @@ select {
 
 #todo-form,
 #edit-form {
-margin-bottom: 0.5rem;
-font-weight: bold;
+   margin-bottom: 0.5rem;
+   padding: 1rem;
+   border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .form-control {
@@ -87,6 +94,7 @@ font-weight: bold;
 }
 
 
+/*to do toolbar*/
 
 #toolbar {
     padding: 1rem;

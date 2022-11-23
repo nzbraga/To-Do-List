@@ -8,7 +8,7 @@ const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 
 
 // funções
-const saveTodo = (Text) => {
+const saveTodo = (text) => {
     
     const todo = document.createElement("div");
     todo.classList.add("todo");
@@ -39,7 +39,8 @@ const saveTodo = (Text) => {
 };
 
 // eventos
-todoForm.addEventListener("submit", (e) => {    
+
+todoForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
     const inputValue = todoInput.value;
@@ -54,5 +55,6 @@ document.addEventListener("click",(e) => {
     const parentEl = targetEl.closest("div");
     
     if (targetEl.classList.container.contains("finish-todo")) {
-        console.log("Clicou para Finalizar"):
-}} )
+        console.log("Clicou para Finalizar");
+
+}} );
